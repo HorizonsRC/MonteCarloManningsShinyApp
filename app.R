@@ -10,28 +10,28 @@ ui <- fluidPage(sidebarLayout(
       sliderInput(
          "n",
          "Manning's n",
-         min = 0.000,
+         min = 0.001,
          max = 0.300,
          value = c(0.03, 0.04)
       ),
       sliderInput(
          "WidthT",
          "Top Width (m)",
-         min = 1,
+         min = 0.1,
          max = 1000,
          value = c(10, 20)
       ),
       sliderInput(
          "WidthB",
          "Bottom Width (m)",
-         min = 1,
+         min = 0.1,
          max = 1000,
          value = c(5, 10)
       ),
       sliderInput(
          "Depth",
          "Depth (m)",
-         min = 0.2,
+         min = 0.1,
          max = 100,
          value = c(1, 2)
       ),
@@ -39,7 +39,7 @@ ui <- fluidPage(sidebarLayout(
          "SlopeB",
          "Bed Slope (m/m)",
          min = 0.0001,
-         max = 0.25,
+         max = 1.0,
          value = c(0.002, 0.005)
       ),
       
